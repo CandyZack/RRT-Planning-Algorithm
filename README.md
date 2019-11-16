@@ -1,6 +1,4 @@
-Author: Deep Baldha [CandyZack]
-
-RRT Algorithm
+RRT Algorithm - Planning Algorithm
 
 Explanation:
 The implementation is done in Python 3. The module used is PyGame, it provides UI to visualize the Algorithm in running state.
