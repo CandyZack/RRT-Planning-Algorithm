@@ -1,17 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 16 17:15:52 2019
-
-@author: CandyZack
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov 15 19:58:38 2019
-
-@author: CandyZack
-"""
-
 #Library Imports
 import pygame
 from random import randint as ri
