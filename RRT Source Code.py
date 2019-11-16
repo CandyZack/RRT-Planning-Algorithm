@@ -82,17 +82,14 @@ def DesText(s,x=315,y=485):
 
 
 #Function Definition :RRT Algorithm
-def RRT(x,y,parent,Method):
+def RRT(x,y,parent):
     if (x,y) not in parent and screen.get_at((x,y)) != (0,0,0,255):
         x_m,y_m=-1,-1
-
-        #Method1: General Algorithm
-        if Method== 1:
-            cur_min=INT_MAX
-            for v in parent:
-                if p2p_dist(v,(x,y))<cur_min:
-                    x_m,y_m=v
-                    cur_min =  p2p_dist(v,(x,y))
+        cur_min=INT_MAX
+        for v in parent:
+            if p2p_dist(v,(x,y))<cur_min:
+                x_m,y_m=v
+                cur_min =  p2p_dist(v,(x,y))
 
         good = True
         ans=[]
@@ -223,8 +220,8 @@ while(running):
             break
     x,y =random_point()
     if (time.time() - Timer) > 5:
-        Step=10
-    good,x_m,y_m,ans=RRT(x,y,parent,1)
+        Step=5
+    good,x_m,y_m,ans=RRT(x,y,parent)
 
     if good and ans:
         x_cur = ans[0]
