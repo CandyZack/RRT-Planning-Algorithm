@@ -138,7 +138,6 @@ def RRT(x,y,parent):
     return(False,-1,-1,[])
 
 running = True
-DesText("RRT Algorithm         Creator: Deep Baldha",250,15)
 #Button for Game
 pygame.draw.rect(screen,BLACK,(GAME_x,GAME_y,GAME_width,GAME_height),GAME_border)
 B1 = Button(BLACK, 25, 470, 100, 50)
